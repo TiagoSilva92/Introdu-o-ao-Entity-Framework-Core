@@ -5603,11 +5603,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tiago SM\\Desktop\\introdu-o-ao-entity-framework-core\\Curso\\Curso\\CursoEFCore.csproj",
+      "projectUniqueName": "C:\\Users\\Tiago SM\\Desktop\\introducao-ao-entity-framework-core\\Curso\\Curso\\CursoEFCore.csproj",
       "projectName": "CursoEFCore",
-      "projectPath": "C:\\Users\\Tiago SM\\Desktop\\introdu-o-ao-entity-framework-core\\Curso\\Curso\\CursoEFCore.csproj",
+      "projectPath": "C:\\Users\\Tiago SM\\Desktop\\introducao-ao-entity-framework-core\\Curso\\Curso\\CursoEFCore.csproj",
       "packagesPath": "C:\\Users\\Tiago SM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tiago SM\\Desktop\\introdu-o-ao-entity-framework-core\\Curso\\Curso\\obj\\",
+      "outputPath": "C:\\Users\\Tiago SM\\Desktop\\introducao-ao-entity-framework-core\\Curso\\Curso\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
