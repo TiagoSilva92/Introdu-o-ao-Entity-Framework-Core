@@ -1,0 +1,11 @@
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\bin\Debug\netcoreapp2.1\Curso.deps.json
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\bin\Debug\netcoreapp2.1\Curso.runtimeconfig.json
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\bin\Debug\netcoreapp2.1\Curso.runtimeconfig.dev.json
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\bin\Debug\netcoreapp2.1\Curso.dll
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\bin\Debug\netcoreapp2.1\Curso.pdb
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\obj\Debug\netcoreapp2.1\Curso.csprojAssemblyReference.cache
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\obj\Debug\netcoreapp2.1\Curso.csproj.CoreCompileInputs.cache
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\obj\Debug\netcoreapp2.1\Curso.AssemblyInfoInputs.cache
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\obj\Debug\netcoreapp2.1\Curso.AssemblyInfo.cs
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\obj\Debug\netcoreapp2.1\Curso.dll
+C:\Users\Tiago SM\Desktop\Curso\Curso\Curso\obj\Debug\netcoreapp2.1\Curso.pdb
