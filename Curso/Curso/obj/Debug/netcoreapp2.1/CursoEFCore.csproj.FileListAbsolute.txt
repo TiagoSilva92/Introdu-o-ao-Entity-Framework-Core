@@ -25,9 +25,9 @@ C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\bin\De
 C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\bin\Debug\netcoreapp2.1\CursoEFCore.runtimeconfig.dev.json
 C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\bin\Debug\netcoreapp2.1\CursoEFCore.dll
 C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\bin\Debug\netcoreapp2.1\CursoEFCore.pdb
-C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\obj\Debug\netcoreapp2.1\CursoEFCore.csprojAssemblyReference.cache
-C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\obj\Debug\netcoreapp2.1\CursoEFCore.csproj.CoreCompileInputs.cache
 C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\obj\Debug\netcoreapp2.1\CursoEFCore.AssemblyInfoInputs.cache
 C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\obj\Debug\netcoreapp2.1\CursoEFCore.AssemblyInfo.cs
+C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\obj\Debug\netcoreapp2.1\CursoEFCore.csproj.CoreCompileInputs.cache
 C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\obj\Debug\netcoreapp2.1\CursoEFCore.dll
 C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\obj\Debug\netcoreapp2.1\CursoEFCore.pdb
+C:\Users\Tiago SM\Desktop\introducao-ao-entity-framework-core\Curso\Curso\obj\Debug\netcoreapp2.1\CursoEFCore.genruntimeconfig.cache
