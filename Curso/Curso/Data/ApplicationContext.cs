@@ -7,6 +7,8 @@ namespace CursoEFCore.Data
     public class ApplicationContext : DbContext
     {
         public DbSet<Pedido> Pedidos { get; set; }
+        public DbSet<Pedido> Produtos { get; set; }
+        public DbSet<Pedido> Clientes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mLqcpW7Pv4FWpwvXSA078AVl+c0EL1qaFbF5mHoTtDJI5ZJB2kVa80BQ3+i5OXzmfeCrUH/VzmJk6weS/5+nNg==",
+  "dgSpecHash": "kGopWgxOK3AZFTNNgx32gWE/JtKH0Igou2wxWYqNpwgdSUlxppNTCD5NcwKiPjZUIU2tLiWwJV//ZxxilBFmiA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tiago SM\\Desktop\\introducao-ao-entity-framework-core\\Curso\\Curso\\CursoEFCore.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,10 @@
     "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.12\\microsoft.extensions.dependencyinjection.abstractions.3.1.12.nupkg.sha512",
     "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.extensions.logging\\3.1.12\\microsoft.extensions.logging.3.1.12.nupkg.sha512",
     "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.12\\microsoft.extensions.logging.abstractions.3.1.12.nupkg.sha512",
+    "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.5\\microsoft.extensions.logging.configuration.3.1.5.nupkg.sha512",
+    "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.extensions.logging.console\\3.1.5\\microsoft.extensions.logging.console.3.1.5.nupkg.sha512",
     "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.extensions.options\\3.1.12\\microsoft.extensions.options.3.1.12.nupkg.sha512",
+    "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.5\\microsoft.extensions.options.configurationextensions.3.1.5.nupkg.sha512",
     "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.12\\microsoft.extensions.primitives.3.1.12.nupkg.sha512",
     "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
     "C:\\Users\\Tiago SM\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",

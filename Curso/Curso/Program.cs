@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using CursoEFCore.Domain;
+using CursoEFCore.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
 namespace CursoEFCore
@@ -8,18 +10,35 @@ namespace CursoEFCore
     {
         static void Main(string[] args)
         {
-            var db = new Data.ApplicationContext();
-
+            //var db = new Data.ApplicationContext();
             //db.Database.Migrate();
+            //var existe = db.Database.GetPendingMigrations().Any();
+            //if (existe)
+            //{
+            //    Validando migrações pendentes
+            //}
 
-            var existe = db.Database.GetPendingMigrations().Any();
+            InserirDAdos();
+        }
 
-            if (existe)
+        private static void InserirDAdos()
+        {
+            var produto = new Produto
             {
-                //Validando migrações pendentes
-            }
+                Descricao = "Produto Teste",
+                CodigoBarras = "1234567891231",
+                Valor = 10m,
+                TipoProduto = TipoProduto.MercadoriaPararevenda,
+                Ativo = true
+            };
 
-            Console.WriteLine("Hello World!");
+            var db = new Data.ApplicationContext();
+           
+            db.Add(produto);
+
+            var registros = db.SaveChanges();
+
+            Console.WriteLine($"Total Registro(s): {registros}");
         }
     }
 }
