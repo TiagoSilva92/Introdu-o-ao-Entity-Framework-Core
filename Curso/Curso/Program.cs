@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using CursoEFCore.Domain;
 using CursoEFCore.ValueObjects;
+using Microsoft.EntityFrameworkCore;
 
 namespace CursoEFCore
 {
@@ -9,8 +11,11 @@ namespace CursoEFCore
         static void Main(string[] args)
         {
             //var db = new Data.ApplicationContext();
+
             //db.Database.Migrate();
+
             //var existe = db.Database.GetPendingMigrations().Any();
+
             //if (existe)
             //{
             //    Validando migrações pendentes
@@ -18,8 +23,32 @@ namespace CursoEFCore
 
             //InserirDados();
 
-            InserirDadosEmMassa();
+            //InserirDadosEmMassa();
+
+            ConsultarDados();
         }
+
+        private static void ConsultarDados()
+        {
+            var db = new Data.ApplicationContext();
+
+            //var consultaPorSintaxe = (from c in db.Clientes where c.Id>0 select c).ToList();
+
+            //var consultaPorMetodo = db.Clientes
+            //    .Where(p => p.Id > 0).ToList()
+            //    .OrderBy(p=>p.Id);
+
+            var consultaPorMetodo = db.Clientes.AsNoTracking().Where(p => p.Id > 0).ToList();
+
+           
+
+            foreach (var cliente in consultaPorMetodo)
+            {
+                Console.WriteLine($"Consultando Cliente: {cliente.Id}");
+                db.Clientes.Find(cliente.Id);
+            }
+        }
+
 
         private static void InserirDadosEmMassa()
         {
@@ -69,7 +98,6 @@ namespace CursoEFCore
 
             Console.WriteLine($"Total Registro(s): {registros}");
         }
-
         private static void InserirDados()
         {
             var produto = new Produto
