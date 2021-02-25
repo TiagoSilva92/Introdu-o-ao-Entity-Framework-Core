@@ -1,4 +1,5 @@
-﻿using CursoEFCore.ValueObjects;
+using System.Collections.Generic;
+using CursoEFCore.ValueObjects;
 
 namespace CursoEFCore.Domain
 {

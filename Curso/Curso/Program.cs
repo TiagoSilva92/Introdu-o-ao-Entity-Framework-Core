@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using CursoEFCore.Domain;
 using CursoEFCore.ValueObjects;
@@ -25,9 +26,84 @@ namespace CursoEFCore
 
             //InserirDadosEmMassa();
 
-            ConsultarDados();
+            //ConsultarDados();
+
+            //CadastrarPedido
+
+            //ConsultarPedidoCarregamentoAdiantado();
+
+            AtualizarDAdos();
         }
 
+        private static void AtualizarDAdos()
+        {
+            var db = new Data.ApplicationContext();
+
+            //var cliente = db.Clientes.Find(1);
+
+            var cliente = new Cliente
+            {
+                Id = 1
+            };
+
+            var clienteDesconectado = new
+            {
+                Nome = "Cliente Desconectado 3",
+                Telefone = "0101010101"
+            };
+
+            db.Attach(cliente);
+            
+            db.Entry(cliente).CurrentValues.SetValues(clienteDesconectado);
+            
+            //db.Clientes.Update(cliente);
+            
+            db.SaveChanges();
+        }
+
+        private static void ConsultarPedidoCarregamentoAdiantado()
+        {
+            var db = new Data.ApplicationContext();
+
+            var pedidos = db
+                .Pedidos
+                .Include(p => p.Itens)
+                    .ThenInclude(p => p.Produto)
+                .ToList();
+
+            Console.WriteLine(pedidos.Count);
+        }
+        private static void CadastrarPedido()
+        {
+            var db = new Data.ApplicationContext();
+
+            var cliente = db.Clientes.FirstOrDefault();
+            var produto = db.Produtos.FirstOrDefault();
+
+            var pedido = new Pedido
+            {
+                ClienteId = cliente.Id,
+                IniciadoEm = DateTime.Now,
+                FinalizadoEm = DateTime.Now,
+                Observacao = "Pedido Teste",
+                Status = StatusPedido.Analise,
+                TipoFrete = TipoFrete.SemFrete,
+                Itens = new List<PedidoItem>
+                 {
+                     new PedidoItem
+                     {
+                         ProdutoId = produto.Id,
+                         Desconto = 0,
+                         Quantidade = 1,
+                         Valor = 10,
+                     }
+                 }
+            };
+
+            db.Pedidos.Add(pedido);
+
+            db.SaveChanges();
+        }
         private static void ConsultarDados()
         {
             var db = new Data.ApplicationContext();
@@ -40,16 +116,12 @@ namespace CursoEFCore
 
             var consultaPorMetodo = db.Clientes.AsNoTracking().Where(p => p.Id > 0).ToList();
 
-           
-
             foreach (var cliente in consultaPorMetodo)
             {
                 Console.WriteLine($"Consultando Cliente: {cliente.Id}");
                 db.Clientes.Find(cliente.Id);
             }
         }
-
-
         private static void InserirDadosEmMassa()
         {
             var produto = new Produto
@@ -57,7 +129,7 @@ namespace CursoEFCore
                 CodigoBarras = "1234567891231",
                 Descricao = "Produto Teste",
                 Valor = 10m,
-                TipoProduto = TipoProduto.MercadoriaPararevenda,
+                TipoProduto = TipoProduto.MercadoriaParaRevenda,
                 Ativo = true
             };
 
@@ -105,7 +177,7 @@ namespace CursoEFCore
                 Descricao = "Produto Teste",
                 CodigoBarras = "1234567891231",
                 Valor = 10m,
-                TipoProduto = TipoProduto.MercadoriaPararevenda,
+                TipoProduto = TipoProduto.MercadoriaParaRevenda,
                 Ativo = true
             };
 

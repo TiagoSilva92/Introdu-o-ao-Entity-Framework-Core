@@ -1,4 +1,4 @@
-﻿namespace CursoEFCore.Domain
+namespace CursoEFCore.Domain
 {
     public class PedidoItem
     {

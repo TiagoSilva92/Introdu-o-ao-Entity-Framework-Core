@@ -1,10 +1,10 @@
-﻿using CursoEFCore.Domain;
+using CursoEFCore.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CursoEFCore.Data.Configuration
+namespace CursoEFCore.Data.Configurations
 {
-    class ProdutoConfiguration : IEntityTypeConfiguration<Produto>
+    public class ProdutoConfiguration : IEntityTypeConfiguration<Produto>
     {
         public void Configure(EntityTypeBuilder<Produto> builder)
         {
