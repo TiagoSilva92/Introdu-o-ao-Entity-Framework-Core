@@ -32,10 +32,28 @@ namespace CursoEFCore
 
             //ConsultarPedidoCarregamentoAdiantado();
 
-            AtualizarDAdos();
+            //AtualizarDados();
+
+            Removerregistros();
         }
 
-        private static void AtualizarDAdos()
+        private static void Removerregistros()
+        {
+            var db = new Data.ApplicationContext();
+            //var cliente = db.Clientes.Find(2);
+
+            var cliente = new Cliente
+            {
+                Id = 3
+            };
+
+            //db.Clientes.Remove(cliente);
+            //db.Remove(cliente);
+            db.Entry(cliente).State = EntityState.Deleted;
+
+            db.SaveChanges();
+        }
+        private static void AtualizarDados()
         {
             var db = new Data.ApplicationContext();
 
@@ -60,7 +78,6 @@ namespace CursoEFCore
             
             db.SaveChanges();
         }
-
         private static void ConsultarPedidoCarregamentoAdiantado()
         {
             var db = new Data.ApplicationContext();
