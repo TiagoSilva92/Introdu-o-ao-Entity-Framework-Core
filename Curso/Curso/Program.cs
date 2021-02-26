@@ -53,6 +53,7 @@ namespace CursoEFCore
 
             db.SaveChanges();
         }
+
         private static void AtualizarDados()
         {
             var db = new Data.ApplicationContext();
@@ -78,6 +79,7 @@ namespace CursoEFCore
             
             db.SaveChanges();
         }
+
         private static void ConsultarPedidoCarregamentoAdiantado()
         {
             var db = new Data.ApplicationContext();
@@ -90,6 +92,7 @@ namespace CursoEFCore
 
             Console.WriteLine(pedidos.Count);
         }
+
         private static void CadastrarPedido()
         {
             var db = new Data.ApplicationContext();
@@ -121,6 +124,7 @@ namespace CursoEFCore
 
             db.SaveChanges();
         }
+
         private static void ConsultarDados()
         {
             var db = new Data.ApplicationContext();
@@ -139,6 +143,7 @@ namespace CursoEFCore
                 db.Clientes.Find(cliente.Id);
             }
         }
+
         private static void InserirDadosEmMassa()
         {
             var produto = new Produto
@@ -187,6 +192,7 @@ namespace CursoEFCore
 
             Console.WriteLine($"Total Registro(s): {registros}");
         }
+
         private static void InserirDados()
         {
             var produto = new Produto
